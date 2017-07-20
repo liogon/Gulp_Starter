@@ -1,0 +1,55 @@
+// All CSS partials are imported here
+
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Overpass:400,700');
+
+@import './01Normalize/normaize';
+@import './01Normalize/basic';
+@import './02Base/variables';
+@import './02Base/global';
+@import './03Project/error';
+@import './03Project/object';
+
+
+// Remove these styles.
+
+.temp {
+  width: 80%;
+  margin: 15vh auto 0 auto;
+
+  h1{
+    font-size: 48px;
+    margin: 10px 0;
+  }
+
+  p {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    color: $ac-1;
+  }
+
+  ul {
+    padding: 0px;
+    color: $ac-1;
+
+    li{
+      display: block;
+      margin: 8px 0px;
+      float: left;
+      padding-left: 20px;
+      box-sizing: border-box;
+      width: 300px;
+      position: relative;
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      background: $ac-1;
+      border-radius: 2px;
+      height: 5px;
+      width: 5px;
+      top: 6px;
+      left: -0px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{# Define Title Here #}
+{% set pageTitle = 'Page Not Found' %}
+
+
+{% extends "layout.njk" %}
+
+{% block pageContent %}
+
+  {# Add page content here #}
+
+  <div class="err">
+    <div class="err-bg">404</div>
+    <h1>Page Not Found!</h1>
+    <p>The page you were trying to view does not exist.</p>
+  </div>
+
+{% endblock %}

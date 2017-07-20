@@ -1,0 +1,13 @@
+// All project specific base styles
+
+html {
+  font-family: $sans;
+}
+
+a {
+  text-decoration: none;
+  color: $ac-1;
+  &:hover {
+    opacity: 0.6;
+  }
+}
